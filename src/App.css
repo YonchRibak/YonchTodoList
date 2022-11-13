@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: block;
+}
+.App {
+  display: block;
+}
+
+.container {
+  padding: 5px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-title {
+  font-size: 2em;
+  margin: 0 auto;
+}
+.navbar .links a {
+  margin: 5px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.tasks__manager-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  height: 90vh;
+  border: solid brown 3px;
+}
+.tasks-container,
+.in__progress-container,
+.completed-container {
+  border: dotted blue 3px;
+  height: 95%;
+}
+
+.tasks,
+.in__progress,
+.completed {
+  height: 95%;
+  border: dashed green 3px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input,
+.form select {
+  margin: 10px auto;
+}
+
+.btn {
+  margin: 10px auto;
+  border: none;
+  box-shadow: 2px 2px 2px 2px gray;
+  background-color: lemonchiffon;
+  padding: 2px;
+}
